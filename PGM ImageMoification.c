@@ -44,14 +44,28 @@
 // This is the array that will contain the image
 // within your program.
 //*** ????????????????????????????????
-int theImageArray[1025][1025];
+int theImageArray[MAX_HEIGHT][MAX_WIDTH];
+
+for (int row = 0; row < MAX_HEIGHT; row++) {
+
+		for (int col = 0; col < MAX_WIDTH; col++) {
+
+			if (theImageArray[row][col] < 127) {
+			theImageArray[row][col] = 0;
+			}
+			if (theImageArray[row][col] > 127) {
+			theImageArray[row][col] = 255;
+			}
+
+		}
+	}
 
 
 
 // You will need an identical  array to use to hold
 // the output of your image transformation
 //*** ????????????????????????????????
-int theImageArrayCopy[1025][1025];
+int theImageArrayCopy[MAX_HEIGHT][MAX_WIDTH];
 
 
 
