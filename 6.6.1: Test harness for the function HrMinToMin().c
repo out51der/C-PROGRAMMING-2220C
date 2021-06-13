@@ -5,7 +5,7 @@ int HrMinToMin(int origHours, int origMinutes) {
    
    totMinutes = (origHours * 60) + origMinutes;
    
-   return origMinutes;
+   return origMinutes; // needs to be fixed with totMinutes
 }
 
 int main(void) {
