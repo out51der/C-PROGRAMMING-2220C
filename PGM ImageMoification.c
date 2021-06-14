@@ -224,6 +224,7 @@ int main(void)
 	//****
 	//**** Your code to transform the image goes here ...
 	//****
+	//B$W modification
 	for (int i = 0; i < MAX_HEIGHT; i++) {
 
 		for (int j = 0; j < MAX_WIDTH; j++) {
