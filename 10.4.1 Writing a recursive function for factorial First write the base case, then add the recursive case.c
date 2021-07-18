@@ -1,5 +1,11 @@
+/* 10.4.1: Non-recursive solution to compute N!
+for (i = inputNum; i > 1; --i) { 
+   facResult = facResult * i; 
+}
+*/
 
 
+// Recursive solution
 // main(): Get N, print NFact(N)
 int NFact(int N) {
    int factResult;
